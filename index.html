@@ -5,43 +5,55 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>B. Jayasoorya | Portfolio</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 scroll-behavior:smooth;
-font-family:Arial,sans-serif;
 }
+
 body{
 background:#0f172a;
 color:white;
 }
+
 header{
 position:fixed;
-width:100%;
 top:0;
-background:#111827;
-padding:20px 8%;
+left:0;
+width:100%;
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:20px 8%;
+background:#111827;
 z-index:1000;
+box-shadow:0 0 15px black;
 }
+
 .logo{
 font-size:28px;
 font-weight:bold;
 color:#38bdf8;
 }
+
 nav a{
-color:white;
 text-decoration:none;
-margin-left:20px;
-font-weight:bold;
+color:white;
+margin-left:25px;
+font-weight:600;
+transition:.3s;
 }
+
 nav a:hover{
 color:#38bdf8;
 }
+
 .hero{
 height:100vh;
 display:flex;
@@ -51,93 +63,131 @@ align-items:center;
 text-align:center;
 padding:20px;
 }
+
 .hero img{
 width:180px;
 height:180px;
 border-radius:50%;
-border:5px solid #38bdf8;
-box-shadow:0 0 30px cyan;
+border:5px solid cyan;
+box-shadow:0 0 35px cyan;
+object-fit:cover;
 margin-bottom:20px;
 }
+
 .hero h1{
-font-size:50px;
+font-size:55px;
 }
-.hero span{
+
+.hero h1 span{
 color:#38bdf8;
 }
-.hero p{
-margin-top:15px;
-font-size:20px;
-max-width:700px;
+
+.hero h3{
+margin:10px 0;
+font-size:25px;
+font-weight:400;
 }
+
+.hero p{
+max-width:700px;
+margin:20px auto;
+line-height:1.8;
+color:#d1d5db;
+}
+
 .btn{
 display:inline-block;
 margin-top:25px;
 padding:15px 35px;
 background:#38bdf8;
-color:white;
-border-radius:30px;
+border-radius:40px;
 text-decoration:none;
+color:white;
 font-weight:bold;
+transition:.3s;
 }
+
+.btn:hover{
+transform:scale(1.08);
+box-shadow:0 0 20px cyan;
+}
+
 section{
-padding:90px 8%;
+padding:100px 8%;
 }
-h2{
+
+.title{
 text-align:center;
-font-size:40px;
-margin-bottom:40px;
+font-size:42px;
+margin-bottom:50px;
 color:#38bdf8;
 }
+
 .about{
+text-align:center;
 max-width:900px;
 margin:auto;
-text-align:center;
-line-height:1.8;
+line-height:1.9;
 font-size:18px;
 }
 .skills{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 gap:20px;
 }
+
 .skill{
 background:#1e293b;
-padding:20px;
-text-align:center;
-border-radius:10px;
-font-size:20px;
-transition:.3s;
-}
-.skill:hover{
-transform:scale(1.08);
-background:#38bdf8;
-}
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-}
-.card{
-background:#1e293b;
 padding:25px;
+text-align:center;
 border-radius:15px;
-transition:.3s;
+font-size:20px;
+font-weight:600;
+transition:.4s;
 }
-.card:hover{
+
+.skill:hover{
+background:#38bdf8;
 transform:translateY(-10px);
 }
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:18px;
+transition:.4s;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px cyan;
+}
+
+.card h3{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
 .contact{
 text-align:center;
 line-height:2;
-font-size:20px;
+font-size:18px;
 }
+
 footer{
 background:#111827;
-padding:20px;
+padding:25px;
 text-align:center;
 margin-top:40px;
 }
+
 </style>
 </head>
 
@@ -148,11 +198,17 @@ margin-top:40px;
 <div class="logo">Jayasoorya</div>
 
 <nav>
+
 <a href="#home">Home</a>
+
 <a href="#about">About</a>
+
 <a href="#skills">Skills</a>
+
 <a href="#projects">Projects</a>
+
 <a href="#contact">Contact</a>
+
 </nav>
 
 </header>
@@ -163,28 +219,33 @@ margin-top:40px;
 
 <h1>B. <span>Jayasoorya</span></h1>
 
+<h3>Python Developer | Web Developer</h3>
+
 <p>
-Information Technology Student | Python Developer | Web Developer
+
+Information Technology Student passionate about
+Artificial Intelligence, Web Development,
+Python Programming and Cloud Computing.
+
 </p>
 
-<a class="btn" href="Resume.pdf">Download Resume</a>
+<a href="Resume.pdf" class="btn">
+Download Resume
+</a>
 
 </section>
 
 <section id="about">
 
-<h2>About Me</h2>
+<h2 class="title">About Me</h2>
 
 <div class="about">
 
-I am B.Tech Information Technology student at
+I am pursuing B.Tech Information Technology at
 Sir Isaac Newton College of Engineering and Technology.
 
-I am passionate about Python, HTML, CSS and Web Development.
-
-Currently working on
-
-<b>Smart Learning System for Artificial Intelligence and Machine Learning.</b>
+I enjoy developing websites, learning Artificial Intelligence,
+and creating real-world software projects.
 
 </div>
 
@@ -192,39 +253,39 @@ Currently working on
 
 <section id="skills">
 
-<h2>Skills</h2>
+<h2 class="title">Skills</h2>
 
 <div class="skills">
 
 <div class="skill">Python</div>
 
-<div class="skill">HTML</div>
+<div class="skill">HTML5</div>
 
-<div class="skill">CSS</div>
+<div class="skill">CSS3</div>
 
 <div class="skill">Java</div>
 
-<div class="skill">Cloud</div>
+<div class="skill">GitHub</div>
 
-<div class="skill">DevOps</div>
+<div class="skill">AI & ML</div>
 
 </div>
 
 </section>
 <section id="projects">
 
-<h2>Projects</h2>
+<h2 class="title">Projects</h2>
 
-<div class="projects">
+<div class="cards">
 
 <div class="card">
 
 <h3>Smart Learning System for AI & ML</h3>
 
 <p>
-An AI-powered learning platform that provides personalized learning,
-interactive quizzes, coding exercises, progress tracking,
-and instructor dashboards for university students.
+Developed an AI-powered learning platform for university students
+with personalized learning, quizzes, progress tracking,
+and instructor dashboards.
 </p>
 
 </div>
@@ -234,11 +295,42 @@ and instructor dashboards for university students.
 <h3>Portfolio Website</h3>
 
 <p>
-A responsive personal portfolio website built using HTML, CSS,
-and JavaScript to showcase my skills and projects.
+A modern responsive portfolio website developed using
+HTML, CSS and JavaScript to showcase my skills,
+projects and achievements.
 </p>
 
 </div>
+
+<div class="card">
+
+<h3>Future Projects</h3>
+
+<p>
+Currently learning Full Stack Development, Python,
+Cloud Computing and Artificial Intelligence to build
+more innovative applications.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2 class="title">Education</h2>
+
+<div class="card">
+
+<h3>B.Tech Information Technology</h3>
+
+<p>
+Sir Isaac Newton College of Engineering and Technology
+</p>
+
+<p>2023 - 2027</p>
 
 </div>
 
@@ -246,31 +338,19 @@ and JavaScript to showcase my skills and projects.
 
 <section id="contact">
 
-<h2>Contact</h2>
+<h2 class="title">Contact Me</h2>
 
 <div class="contact">
 
-<p><b>Name:</b> B. Jayasoorya</p>
+<p>👤 <b>B. Jayasoorya</b></p>
 
-<p><b>College:</b><br>
-Sir Isaac Newton College of Engineering and Technology
-</p>
+<p>📧 jayasuriya1127@gmail.com</p>
 
-<p><b>Email:</b><br>
-jayasuriya1127@gmail.com
-</p>
+<p>📱 +91 7810054806</p>
 
-<p><b>Phone:</b><br>
-+91 7810054806
-</p>
+<p>💻 GitHub : github.com/jayasuriya1127-svg</p>
 
-<p><b>GitHub:</b><br>
-https://github.com/jayasuriya1127-svg
-</p>
-
-<p><b>LinkedIn:</b><br>
-https://www.linkedin.com/in/jayasoorya-b
-</p>
+<p>💼 LinkedIn : linkedin.com/in/jayasoorya-b</p>
 
 </div>
 
@@ -278,29 +358,23 @@ https://www.linkedin.com/in/jayasoorya-b
 
 <footer>
 
-<p>
-© 2026 B. Jayasoorya | All Rights Reserved
-</p>
+<p>© 2026 B. Jayasoorya | All Rights Reserved.</p>
 
 </footer>
 <script>
 
-// Smooth scroll animation
-const links = document.querySelectorAll("nav a");
-
-links.forEach(link => {
-    link.addEventListener("click", function(e) {
+// Smooth Scroll
+document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", function(e){
         e.preventDefault();
 
-        const id = this.getAttribute("href");
-
-        document.querySelector(id).scrollIntoView({
-            behavior: "smooth"
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior:"smooth"
         });
     });
 });
 
-// Fade-in animation
+// Fade Animation
 const sections = document.querySelectorAll("section");
 
 const observer = new IntersectionObserver((entries)=>{
@@ -314,10 +388,24 @@ const observer = new IntersectionObserver((entries)=>{
 
 sections.forEach(section=>{
     section.style.opacity="0";
-    section.style.transform="translateY(40px)";
-    section.style.transition="all 0.8s ease";
+    section.style.transform="translateY(50px)";
+    section.style.transition="1s";
     observer.observe(section);
 });
+
+// Typing Effect
+const text = "Welcome to My Portfolio";
+let i = 0;
+
+function typing(){
+    if(i < text.length){
+        document.title += text.charAt(i);
+        i++;
+        setTimeout(typing,100);
+    }
+}
+
+typing();
 
 </script>
 
