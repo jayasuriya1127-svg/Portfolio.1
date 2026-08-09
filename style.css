@@ -524,3 +524,32 @@ textarea {
 
 .timeline-dot {
     position:
+
+    /* ===============================
+   SCROLL ANIMATION
+================================ */
+
+.section-title,
+.about-content,
+.skill-card,
+.project-card,
+.certificate-card,
+.timeline-item,
+.resume-box,
+.contact-container {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.7s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Active Navbar */
+
+.navbar a.active {
+    color: var(--accent2);
+}
